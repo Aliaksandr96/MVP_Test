@@ -9,21 +9,26 @@
 /* Begin PBXBuildFile section */
 		DAD92FBB2906CE9C00ECD2FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD92FBA2906CE9C00ECD2FD /* AppDelegate.swift */; };
 		DAD92FBD2906CE9C00ECD2FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD92FBC2906CE9C00ECD2FD /* SceneDelegate.swift */; };
-		DAD92FBF2906CE9C00ECD2FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD92FBE2906CE9C00ECD2FD /* ViewController.swift */; };
-		DAD92FC22906CE9C00ECD2FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD92FC02906CE9C00ECD2FD /* Main.storyboard */; };
+		DAD92FBF2906CE9C00ECD2FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD92FBE2906CE9C00ECD2FD /* MainViewController.swift */; };
 		DAD92FC42906CE9D00ECD2FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD92FC32906CE9D00ECD2FD /* Assets.xcassets */; };
 		DAD92FC72906CE9D00ECD2FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD92FC52906CE9D00ECD2FD /* LaunchScreen.storyboard */; };
+		DAD92FCF2906D01D00ECD2FD /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD92FCE2906D01D00ECD2FD /* MainViewPresenter.swift */; };
+		DAD92FD32906D05600ECD2FD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD92FD22906D05600ECD2FD /* SecondViewController.swift */; };
+		DAD92FD52906D05E00ECD2FD /* SecondViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD92FD42906D05E00ECD2FD /* SecondViewPresenter.swift */; };
+		DAD92FD92906D0D200ECD2FD /* EasyAutolayout in Frameworks */ = {isa = PBXBuildFile; productRef = DAD92FD82906D0D200ECD2FD /* EasyAutolayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DAD92FB72906CE9C00ECD2FD /* MVP_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD92FBA2906CE9C00ECD2FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAD92FBC2906CE9C00ECD2FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DAD92FBE2906CE9C00ECD2FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DAD92FC12906CE9C00ECD2FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAD92FBE2906CE9C00ECD2FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DAD92FC32906CE9D00ECD2FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAD92FC62906CE9D00ECD2FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAD92FC82906CE9D00ECD2FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD92FCE2906D01D00ECD2FD /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		DAD92FD22906D05600ECD2FD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DAD92FD42906D05E00ECD2FD /* SecondViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD92FD92906D0D200ECD2FD /* EasyAutolayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +62,41 @@
 		DAD92FB92906CE9C00ECD2FD /* MVP_Test */ = {
 			isa = PBXGroup;
 			children = (
-				DAD92FBA2906CE9C00ECD2FD /* AppDelegate.swift */,
-				DAD92FBC2906CE9C00ECD2FD /* SceneDelegate.swift */,
-				DAD92FBE2906CE9C00ECD2FD /* ViewController.swift */,
-				DAD92FC02906CE9C00ECD2FD /* Main.storyboard */,
-				DAD92FC32906CE9D00ECD2FD /* Assets.xcassets */,
-				DAD92FC52906CE9D00ECD2FD /* LaunchScreen.storyboard */,
+				DAD92FD62906D08C00ECD2FD /* SupporingFiles */,
+				DAD92FD12906D04400ECD2FD /* SecondModule */,
+				DAD92FD02906D03C00ECD2FD /* MainModule */,
 				DAD92FC82906CE9D00ECD2FD /* Info.plist */,
 			);
 			path = MVP_Test;
+			sourceTree = "<group>";
+		};
+		DAD92FD02906D03C00ECD2FD /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				DAD92FBE2906CE9C00ECD2FD /* MainViewController.swift */,
+				DAD92FCE2906D01D00ECD2FD /* MainViewPresenter.swift */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		DAD92FD12906D04400ECD2FD /* SecondModule */ = {
+			isa = PBXGroup;
+			children = (
+				DAD92FD22906D05600ECD2FD /* SecondViewController.swift */,
+				DAD92FD42906D05E00ECD2FD /* SecondViewPresenter.swift */,
+			);
+			path = SecondModule;
+			sourceTree = "<group>";
+		};
+		DAD92FD62906D08C00ECD2FD /* SupporingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DAD92FC32906CE9D00ECD2FD /* Assets.xcassets */,
+				DAD92FBA2906CE9C00ECD2FD /* AppDelegate.swift */,
+				DAD92FBC2906CE9C00ECD2FD /* SceneDelegate.swift */,
+				DAD92FC52906CE9D00ECD2FD /* LaunchScreen.storyboard */,
+			);
+			path = SupporingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +115,9 @@
 			dependencies = (
 			);
 			name = MVP_Test;
+			packageProductDependencies = (
+				DAD92FD82906D0D200ECD2FD /* EasyAutolayout */,
+			);
 			productName = MVP_Test;
 			productReference = DAD92FB72906CE9C00ECD2FD /* MVP_Test.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,9 @@
 				Base,
 			);
 			mainGroup = DAD92FAE2906CE9C00ECD2FD;
+			packageReferences = (
+				DAD92FD72906D0D200ECD2FD /* XCRemoteSwiftPackageReference "EasyAutoLayout" */,
+			);
 			productRefGroup = DAD92FB82906CE9C00ECD2FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +165,6 @@
 			files = (
 				DAD92FC72906CE9D00ECD2FD /* LaunchScreen.storyboard in Resources */,
 				DAD92FC42906CE9D00ECD2FD /* Assets.xcassets in Resources */,
-				DAD92FC22906CE9C00ECD2FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD92FBF2906CE9C00ECD2FD /* ViewController.swift in Sources */,
+				DAD92FBF2906CE9C00ECD2FD /* MainViewController.swift in Sources */,
 				DAD92FBB2906CE9C00ECD2FD /* AppDelegate.swift in Sources */,
+				DAD92FCF2906D01D00ECD2FD /* MainViewPresenter.swift in Sources */,
+				DAD92FD52906D05E00ECD2FD /* SecondViewPresenter.swift in Sources */,
+				DAD92FD32906D05600ECD2FD /* SecondViewController.swift in Sources */,
 				DAD92FBD2906CE9C00ECD2FD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DAD92FC02906CE9C00ECD2FD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DAD92FC12906CE9C00ECD2FD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DAD92FC52906CE9D00ECD2FD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,6 +390,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DAD92FD72906D0D200ECD2FD /* XCRemoteSwiftPackageReference "EasyAutoLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Ligr/EasyAutoLayout";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DAD92FD82906D0D200ECD2FD /* EasyAutolayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAD92FD72906D0D200ECD2FD /* XCRemoteSwiftPackageReference "EasyAutoLayout" */;
+			productName = EasyAutolayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DAD92FAF2906CE9C00ECD2FD /* Project object */;
 }
